@@ -1,5 +1,11 @@
 <template>
   <section>
-    <p>Hello from home</p>
+    <Wellcome />
   </section>
 </template>
+
+<script setup>
+
+import Wellcome from '@/components/Wellcome.vue'
+
+</script>

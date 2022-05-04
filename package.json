@@ -8,11 +8,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "autoprefixer": "^10.4.7",
     "postcss": "^8.4.13",
     "tailwindcss": "^3.0.24",
     "vue": "^3.2.25",
-    "vue-router": "^4.0.14"
+    "vue-router": "^4.0.14",
+    "vue-unicons": "^3.3.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.3.1",
