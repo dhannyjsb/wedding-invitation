@@ -2,10 +2,15 @@
 .frame {
   @apply absolute w-6/12 z-10;
 }
+
+.close-page {
+  animation: backOutUp 1s .55s forwards;
+}
+
 </style>
 
 <template>
-  <section class="w-full h-screen bg-gray-100 relative grid place-items-center">
+  <section :class="openInvitation ? 'close-page' : ''" class="w-full h-screen bg-gray-100 fixed inset-0 grid place-items-center">
     <!-- Frames -->
     <img class="frame top-0 left-0 animate__animated animate__fadeInLeft" src="@/assets/frame-mirror.png" alt="frame">
     <img class="frame top-0 right-0 animate__animated animate__fadeInRight" src="@/assets/frame.png" alt="frame">
@@ -22,7 +27,10 @@
         <h1 class="satisfy-font text-5xl lg:text-6xl my-4 text-green-600">{{ couples.join(' & ') }}</h1>
         <p>Semoga menjadi pasangan yang dipertemukan oleh takdir hingga maut yang memisahkan</p>
        <!-- CTA -->
-        <button type="buton" class="w-10/12 md:w-8/12 text-sm md-text-lg mt-12 font-medium border border-blue-500 text-blue-500 bg-light p-2 rounded-full">
+        <button 
+          type="buton" 
+          @click="openInvitation = true"
+          class="w-10/12 md:w-8/12 text-sm md-text-lg mt-12 font-medium border border-blue-500 text-blue-500 bg-light p-2 rounded-full pointer active:scale-90 hover:bg-blue-500 hover:text-gray-100 duration-300">
           <i class="fa-solid fa-book-open mr-1"></i>
           Buka undangan
        </button>
@@ -40,5 +48,7 @@ import 'animate.css'
 
 const couples = ref(['Fulan', 'Fulanah'])
 const weddingDate = ref('Ahad, 27 Mei 2022')
+
+const openInvitation = ref(false)
 
 </script>

@@ -15,3 +15,8 @@ button {
 .satisfy-font {
 	font-family: 'Satisfy', cursive;
 }
+
+/* Global class */
+.container-section {
+	@apply w-full p-5;
+}
