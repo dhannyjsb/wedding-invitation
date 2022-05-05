@@ -13,6 +13,7 @@
       </p>
     </div>
     <Profile />
+    <Timelines />
   </section>
 </template>
 
@@ -20,6 +21,7 @@
 
 import HeaderSection from '@/components/HeaderSection.vue'
 import Profile from '@/components/Profile.vue'
+import Timelines from '@/components/Timelines.vue'
 import wave from '@/assets/svg/wave.svg'
 
 </script>
