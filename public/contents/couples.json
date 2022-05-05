@@ -1,0 +1,26 @@
+{
+	"couples": [
+		{
+			"name": "Fulan bin Fulan",
+			"sosmed": [
+				{ "icon": "fab fa-instagram", "link": "http://fake.com" },
+				{ "icon": "fab fa-facebook", "link": "http://fake.com" },
+				{ "icon": "fab fa-twitter", "link": "http://fake.com" }
+			],
+			"parents": ["Fulan", "Fulanah"],
+			"thumb": "/couples/couple-male.jpg",
+			"address": "Komplek Setia Budi Sentosa Blok 12A Nomor 6 Gang Serunai Asri - Brebes, Jawa Timur"
+		},
+		{
+			"name": "Fulanah binti Fulan",
+			"sosmed": [
+				{ "icon": "fab fa-instagram", "link": "http://fake.com" },
+				{ "icon": "fab fa-facebook", "link": "http://fake.com" },
+				{ "icon": "fab fa-twitter", "link": "http://fake.com" }
+			],
+			"parents": ["Fulan", "Fulanah"],
+			"thumb": "/couples/couple-female.jpg",
+			"address": "Komplek Setia Budi Sentosa Blok 12A Nomor 6 Gang Serunai Asri - Brebes, Jawa Timur"
+		}
+	]
+}

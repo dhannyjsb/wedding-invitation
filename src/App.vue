@@ -15,7 +15,16 @@
 </template> 
  
 <script setup>
- 
+
+import AOS from 'aos'
+import { onMounted } from 'vue'
 import Audio from '@/components/Audio.vue'
+
+onMounted(() => {
+  AOS.init({
+    duration: 600,
+    offset: 160
+  })
+})
 
 </script>
