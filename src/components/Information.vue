@@ -7,7 +7,7 @@
       Mari bersama mengikuti protokol kesehatan yang diberlakukan oleh Pemerintah RI
       dalam upaya pencegahan terjadinya penularan virus Covid 19
     </p>
-    <!-- Protocos -->
+    <!-- Protocols -->
     <div
       data-aos="zoom-in"
       class="mt-10 flex flex-wrap gap-3 justify-center">
@@ -17,6 +17,16 @@
           <p>{{ protocol.title }}</p>
         </div>
       </template>
+    </div>
+    <!-- Protocols -->
+    <!-- Hadist -->
+    <div
+      data-aos="zoom-in"
+      class="text-center mt-16 w-10/12 mx-auto">
+      <p class="font-medium text-sm mb-2">
+        "Tidak ada solusi yang lebih baik bagi dua insan yang saling mencintai di banding pernikahan."
+      </p>
+      <h1 class="kalam-font text-xl text-green-600">HR. Ibnu Majah</h1>
     </div>
   </section>
 </template>
