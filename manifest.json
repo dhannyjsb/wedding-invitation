@@ -1,0 +1,8 @@
+{
+  "name": "Wedding Invitation Online - Web App Based",
+  "short_name": "Wedding Invitation",
+  "theme_color": "#ffffff",
+  "background_color": "#121212",
+  "display": "standalone",
+  "orientation": "portrait"
+}
