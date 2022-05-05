@@ -1,19 +1,19 @@
 {
 	"protocols": [
 		{
-			"title": "Gunakan masker",
+			"title": "Selalu menggunakan masker",
 			"thumb": "protocols/wear-mask.jpg"
 		},
 		{
-			"title": "Mencuci Tangan",
+			"title": "Mencuci Tangan secara berkala",
 			"thumb": "protocols/wash-hands.jpg"
 		},
 		{
-			"title": "Menjaga Jarak",
+			"title": "Menjaga jarak minimal dua meter dan jauhi kerumunan",
 			"thumb": "protocols/keep-distance.jpg"
 		},
 		{
-			"title": "Membersihkan permukaan",
+			"title": "Sterilisasi benda yang mengalami kontak langsung secara berkala",
 			"thumb": "protocols/clean-surface.jpg"
 		}
 	]

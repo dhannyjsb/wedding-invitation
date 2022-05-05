@@ -10,7 +10,7 @@
 </style>
 
 <template>
-  <section :class="isOpenInvitation ? 'close-page' : ''" class="w-full h-screen bg-slate-100 fixed inset-0 grid place-items-center z-50 bg-texture">
+  <section :class="isOpenInvitation ? 'close-page' : ''" class="w-full h-screen bg-slate-100 min-h-screen fixed inset-0 grid place-items-center z-50 bg-texture bg-cover">
     <!-- Frames -->
     <img class="frame top-0 left-0 animate__animated animate__fadeInLeft" src="@/assets/frame-mirror.png" alt="frame">
     <img class="frame top-0 right-0 animate__animated animate__fadeInRight" src="@/assets/frame.png" alt="frame">

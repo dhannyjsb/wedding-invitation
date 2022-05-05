@@ -1,5 +1,5 @@
 <template>
-  <section data-aos="zoom-out" class="w-full mb-6">
+  <section data-aos="zoom-out" class="w-full mb-12">
     <div class="w-full flex gap-2 justify-center tems-center my-2">
       <i class="fa-solid fa-bahai text-sm"></i>
       <i class="fa-solid fa-bahai"></i>
