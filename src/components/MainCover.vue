@@ -16,7 +16,7 @@ img {
       <br>
       <strong>Prof. Abdullah Ibnu Hasim</strong>
     </div>
-    <wave class="absolute bottom-0 left-0 right-0"/>
+    <wave class="absolute -bottom-1 left-0 right-0"/>
   </section>
 </template>
 

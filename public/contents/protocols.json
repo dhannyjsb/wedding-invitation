@@ -1,0 +1,20 @@
+{
+	"protocols": [
+		{
+			"title": "Gunakan masker",
+			"thumb": "protocols/wear-mask.jpg"
+		},
+		{
+			"title": "Mencuci Tangan",
+			"thumb": "protocols/wash-hands.jpg"
+		},
+		{
+			"title": "Menjaga Jarak",
+			"thumb": "protocols/keep-distance.jpg"
+		},
+		{
+			"title": "Membersihkan permukaan",
+			"thumb": "protocols/clean-surface.jpg"
+		}
+	]
+}
