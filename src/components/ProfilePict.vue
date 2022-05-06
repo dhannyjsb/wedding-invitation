@@ -1,9 +1,8 @@
 <template>
   <section 
-    data-aos="slide-up"
     class="w-full">
-    <img class="w-8/12 mx-auto rounded-full border-4 border-slate-200 ring-2 ring-green-600" :src="source.thumb" :alt="source.thumb">
-    <div class="mt-4 w-full text-center text-slate-800 text-sm">
+    <img data-aos="zoom-in" class="w-8/12 mx-auto rounded-full border-4 border-slate-200 ring-2 ring-green-600" :src="source.thumb" :alt="source.thumb">
+    <div data-aos="slide-up" class="mt-4 w-full text-center text-slate-800 text-sm">
       <p class="text-green-500 font-semibold kalam-font text-xl">{{ source.name }}</p>
       <p class="mb-3 mt-1 font-semibold">Anak dari pasangan Bapak {{ source.parents[0] }} dengan Ibu {{ source.parents[1] }}</p>
       <p>{{ source.address }}</p>

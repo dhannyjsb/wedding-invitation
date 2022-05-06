@@ -12,7 +12,7 @@
       <div 
         data-aos="zoom-in"
         data-aos-delay="600"
-        class="w-full text-center text-sm text-slate-800 mb-4">
+        class="text-center text-sm text-slate-800 mb-4">
         <h2 class="mb-3 kalam-font text-2xl text-green-500">{{ timeline.title }}</h2>
         <p>{{ timeline.date }}</p>
         <p>{{ timeline.time }}</p>
@@ -21,20 +21,6 @@
       </div>
     </template>
   </section>
-  <!-- CTA -->
-  <div 
-    data-aos="zoom-in"
-    data-aos-offset="100"
-    class="w-8/10 mx-auto flex justify-center gap-2 mt-6 text-xs">
-    <a class="button" href="">
-       <i class="fab fa-google mr-2"></i>
-       Google Calendar
-    </a>
-    <a class="button" href="">
-       <i class="fa fa-map-marker mr-2"></i>
-       View on Gmaps
-     </a>
-  </div>
 </template>
 
 <script setup>

@@ -1,7 +1,7 @@
 <style scoped>
 
 .app {
-  @apply w-full md:w-10/12 lg:w-8/12 xl:w-6/12 md:mx-auto pb-24;
+  @apply w-full lg:w-8/12 xl:w-6/12 md:mx-auto pb-24;
 }
 
 </style>>
@@ -21,10 +21,7 @@ import { onMounted } from 'vue'
 import Audio from '@/components/Audio.vue'
 
 onMounted(() => {
-  AOS.init({
-    duration: 600,
-    offset: 160
-  })
+  AOS.init()
 })
 
 </script>

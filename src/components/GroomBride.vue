@@ -1,6 +1,6 @@
 <template>
-  <section class="container-section bg-slate-100 relative">
-    <wave class="absolute -top-6 left-0 right-0 rotate-180" />
+  <section class="container-section bg-slate-100">
+    <wave class="rotate-180" />
     <HeaderSection title="Groom & Bride" />
     <div class="w-10/12 mx-auto text-center text-sm text-slate-800" >
       <p 
