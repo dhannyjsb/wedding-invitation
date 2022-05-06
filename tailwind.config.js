@@ -4,7 +4,8 @@ module.exports = {
     extend: {
       backgroundImage: {
         "main-cover": "url('@/assets/main-cover.jpeg')",
-        "texture": "url('@/assets/texture.png')"
+        "texture": "url('@/assets/texture.png')",
+        "prewedding": "url('@/assets/prewedding.jpg')"
       }
     },
   },

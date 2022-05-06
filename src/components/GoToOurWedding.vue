@@ -52,6 +52,4 @@ const timer = setInterval(() => {
   })
 }, 1000)
 
-
-
 </script>
