@@ -6,6 +6,7 @@
     <GroomBride />
     <GoToOurWedding />
     <OurGallery />
+    <OurStory />
   </section>
 </template>
 
@@ -17,5 +18,6 @@ import Information from '@/components/Information.vue'
 import GroomBride from '@/components/GroomBride.vue'
 import GoToOurWedding from '@/components/GoToOurWedding.vue'
 import OurGallery from '@/components/OurGallery.vue'
+import OurStory from '@/components/OurStory.vue'
 
 </script>
