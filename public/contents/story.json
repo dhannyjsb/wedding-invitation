@@ -1,0 +1,20 @@
+{
+	"stories": [
+		{
+			"title": "Lamaran",
+			"place": "Rumah Fulanah",
+			"description": "Ut, eros. In hac habitasse platea dictumst. Integer neque purus, congue sed, mattis sed, vulputate ac, pede. Donec vestibulum purus non tortor. Integer at nunc. Suspendisse fermentum velit quis sem. Phasellus."
+		},
+		{
+			"title": "Menyatakan Cinta",
+			"place": "Cafetaria D'Oxone",
+			"description": "Ut, eros. In hac habitasse platea dictumst. Integer neque purus, congue sed, mattis sed, vulputate ac, pede. Donec vestibulum purus non tortor. Integer at nunc. Suspendisse fermentum velit quis sem. Phasellus."
+		},
+		{
+			"title": "Pertemuan Pertama",
+			"place": "Taman Hijau Alun Alun Brebes",
+			"description": "Ut, eros. In hac habitasse platea dictumst. Integer neque purus, congue sed, mattis sed, vulputate ac, pede. Donec vestibulum purus non tortor. Integer at nunc. Suspendisse fermentum velit quis sem. Phasellus."
+		}
+
+	]
+}
