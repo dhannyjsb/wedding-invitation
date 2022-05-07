@@ -1,7 +1,7 @@
 <style scoped>
 
 .app {
-  @apply w-full lg:w-8/12 xl:w-6/12 md:mx-auto pb-24;
+  @apply w-full lg:w-8/12 xl:w-6/12 md:mx-auto;
 }
 
 </style>>
