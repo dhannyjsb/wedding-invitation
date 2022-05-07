@@ -28,20 +28,13 @@ input, textarea, select, option {
       @submit="sendMessage"
       class="w-10/12 mx-auto mt-6">
       <!-- Alert -->
-      <div :class="statusResponse ? 'bg-green-500' : 'bg-red-500'" 
-        class="mb-3 w-full text-gray-100 p-3 text-center font-medium rounded-lg duration-300" 
-        v-if="showAlert"
-        >
-        {{ statusResponse ? 'Pesan berhasil terkirim' : 'Pesan gagal dikirimkan' }}
-        <button 
-          @click="showAlert = false"
-          class="px-1">X</button>
-      </div>
-      <!-- Alert -->
+      <Alert :statusResponse="statusResponse" :showAlert="showAlert" v-on:close="showAlert = false" />
+      <!-- Guest Name -->
       <div class="input-wrapper" data-aos="zoom-in">
         <label for="guestName" class="kalam-font">Nama</label>
         <input v-model="form.guestName" name="guestName" id="guestName" type="text" required>
       </div>
+      <!-- Guest Status -->
       <div class="input-wrapper" data-aos="zoom-in">
         <label for="guestStatus" class="kalam-font">Kehadiran</label>
         <select v-model="form.guestStatus" name="guestStatus" id="guestStatus" required>
@@ -49,10 +42,12 @@ input, textarea, select, option {
           <option value="false">Tidak Hadir</option>
         </select>
       </div>
+      <!-- Guest Message -->
       <div class="input-wrapper" data-aos="zoom-in">
         <label for="guestMessage" class="kalam-font">Pesan</label>
         <textarea v-model="form.guestMessage" name="guestMessage" id="guestMessage" cols="30" rows="5" required></textarea>
       </div>
+      <!-- Submit -->
       <button 
         data-aos="zoom-in"
         class="w-full bg-green-500 text-gray-100 mt-6 rounded-lg py-2 font-medium pointer active:scale-90 hover:border border-gray-500 hover:bg-gray-100 hover:text-green-500 duration-300" type="submit">
@@ -75,6 +70,7 @@ input, textarea, select, option {
 import { computed, reactive, ref } from 'vue'
 import { useState } from '@/stores/state.js'
 import HeaderSection from '@/components/HeaderSection.vue'
+import Alert from '@/components/Alert.vue'
 import wave from '@/assets/svg/wave.svg'
 
 const state = useState()
