@@ -6,6 +6,9 @@ module.exports = {
         "main-cover": "url('@/assets/main-cover.jpeg')",
         "texture": "url('@/assets/texture.png')",
         "prewedding": "url('@/assets/prewedding.jpg')"
+      },
+      fontSize: {
+        'xxs': '.65rem'
       }
     },
   },
