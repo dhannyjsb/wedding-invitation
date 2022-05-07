@@ -24,22 +24,34 @@ input, textarea, select, option {
     <HeaderSection title="Guest Book" />
     <!-- Form -->
     <form 
-      @submit.prevent=""
+      ref="formEl"
+      @submit="sendMessage"
       class="w-10/12 mx-auto mt-6">
+      <!-- Alert -->
+      <div :class="statusResponse ? 'bg-green-500' : 'bg-red-500'" 
+        class="mb-3 w-full text-gray-100 p-3 text-center font-medium rounded-lg duration-300" 
+        v-if="showAlert"
+        >
+        {{ statusResponse ? 'Pesan berhasil terkirim' : 'Pesan gagal dikirimkan' }}
+        <button 
+          @click="showAlert = false"
+          class="px-1">X</button>
+      </div>
+      <!-- Alert -->
       <div class="input-wrapper" data-aos="zoom-in">
         <label for="guestName" class="kalam-font">Nama</label>
-        <input name="guestName" id="guestName" type="text" required>
+        <input v-model="form.guestName" name="guestName" id="guestName" type="text" required>
       </div>
       <div class="input-wrapper" data-aos="zoom-in">
         <label for="guestStatus" class="kalam-font">Kehadiran</label>
-        <select name="guestStatus" id="guestStatus" required>
+        <select v-model="form.guestStatus" name="guestStatus" id="guestStatus" required>
           <option value="true">Hadir</option>
           <option value="false">Tidak Hadir</option>
         </select>
       </div>
       <div class="input-wrapper" data-aos="zoom-in">
         <label for="guestMessage" class="kalam-font">Pesan</label>
-        <textarea name="guestMessage" id="guestMessage" cols="30" rows="5" required></textarea>
+        <textarea v-model="form.guestMessage" name="guestMessage" id="guestMessage" cols="30" rows="5" required></textarea>
       </div>
       <button 
         data-aos="zoom-in"
@@ -48,6 +60,7 @@ input, textarea, select, option {
         Kirim pesan
       </button>
     </form>
+    <!-- Message Box -->
     <!-- Frames -->
     <div class="w-full flex justify-between mt-6">
       <img class="frame" src="@/assets/frame.png" alt="frame">
@@ -59,7 +72,40 @@ input, textarea, select, option {
 
 <script setup>
 
+import { computed, reactive, ref } from 'vue'
+import { useState } from '@/stores/state.js'
 import HeaderSection from '@/components/HeaderSection.vue'
 import wave from '@/assets/svg/wave.svg'
 
+const state = useState()
+const messages = computed(() => state.messages)
+
+// Form handler
+const formEl = ref(null)
+
+const form = reactive({
+  guestName: '',
+  guestStatus: true,
+  guestMessage: ''
+})
+
+// Alert handler
+const statusResponse = ref(false)
+const showAlert = ref(false)
+
+const sendMessage = ( evt ) => {
+  evt.preventDefault()
+  
+  form.timestamp = new Date().toLocaleString()
+  try {
+    setTimeout(() => {
+      state.messages.unshift( form )
+      statusResponse.value = true
+      showAlert.value = true
+    }, 500)
+  } catch(err) {
+      statusResponse.value = false
+      showAlert.value = true
+  }
+}
 </script>
