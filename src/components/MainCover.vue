@@ -6,7 +6,9 @@
       <h1 class="satisfy-font text-5xl lg:text-6xl my-4 font-bold text-green-300">Fulan & Fulanah</h1>
       <small>Kepada yth Bapak / Ibu</small>
       <br>
-      <strong>Prof. Abdullah Ibnu Hasim</strong>
+      <strong>{{ params.to }}</strong>
+      <br>
+      <small>Ditempat</small>
     </div>
     <wave class="absolute -bottom-1 left-0 right-0"/>
   </section>
@@ -14,6 +16,13 @@
 
 <script setup>
 
+import { computed } from 'vue'
+import { useRoute } from 'vue-router' 
 import wave from '@/assets/svg/wave.svg'
+
+const route = useRoute()
+let params = computed(() => route.query)
+
+if (params.to === undefined) params = { to: 'Saudara/i' } 
 
 </script>
