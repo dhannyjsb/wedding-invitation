@@ -1,6 +1,6 @@
 <style scoped>
 .frame {
-  @apply absolute w-6/12 z-0;
+  @apply absolute w-6/12 md:w-4/12 z-0;
 }
 
 .close-page {
@@ -18,7 +18,7 @@
     <img class="frame bottom-0 left-0 rotate-180" src="@/assets/frame.png" alt="frame">
     <!-- Frames -->
     <!-- Wedding couple -->
-    <div class="w-8/12 text-center text-xs md:text-lg lg:text-xl">
+    <div class="w-6/12 text-center text-xs md:text-lg lg:text-xl">
       <!-- Decoration -->
       <img src="@/assets/decoration-asset-1.png" class="animate__animated animate__swing w-10/12 md:w-8/12 mx-auto">
       

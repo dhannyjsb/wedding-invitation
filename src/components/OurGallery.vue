@@ -1,13 +1,15 @@
 <template>
-  <section class="container-section bg-slate-100">
+  <section class="w-full bg-slate-100">
     <wave class="rotate-180" />
-    <HeaderSection title="Our Gallery" />
-    <viewer :images="galleries" class="flex flex-wrap gap-3 justify-center">
-     <img v-for="src in galleries" data-aos="zoom-in"
-      :src="src" :key="src" class="w-5/12 rounded-lg">
-    </viewer>
-    <!-- Our Video -->
-    <OurVideo class="mt-16" />
+    <section class="container-section">
+      <HeaderSection title="Our Gallery" />
+      <viewer :images="galleries" class="flex flex-wrap gap-3 justify-center">
+      <img v-for="src in galleries" data-aos="zoom-in"
+        :src="src" :key="src" class="w-5/12 rounded-lg">
+      </viewer>
+      <!-- Our Video -->
+      <OurVideo class="mt-16" />
+    </section>
   </section>
 </template>
 
