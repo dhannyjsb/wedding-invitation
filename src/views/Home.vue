@@ -25,6 +25,7 @@
     <OurStory />
     <GuestBook />
   </section>
+  <Navigation />
 </template>
 
 <script setup>
@@ -39,6 +40,7 @@ import GoToOurWedding from '@/components/GoToOurWedding.vue'
 import OurGallery from '@/components/OurGallery.vue'
 import OurStory from '@/components/OurStory.vue'
 import GuestBook from '@/components/GuestBook.vue'
+import Navigation from '@/components/Navigation.vue'
 
 const state = useState()
 const isAudioPlayed = computed(() => state.isAudioPlay)

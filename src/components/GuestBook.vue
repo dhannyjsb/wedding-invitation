@@ -19,7 +19,7 @@ input, textarea, select, option {
 </style>
 
 <template>
-  <section class="w-full relative bg-slate-100 pb-0">
+  <section class="w-full mb-12 relative bg-slate-100 pb-0">
     <wave class="bg-slate-100 rotate-180"/>
     <section class="container-section">
       <HeaderSection title="Guest Book" />
