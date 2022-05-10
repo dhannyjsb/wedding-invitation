@@ -7,7 +7,7 @@ img {
 </style>
 
 <template>
-  <section class="relative flex flex-col justify-center gap-3 bg-prewedding bg-cover h-screen">
+  <section class="w-full relative flex flex-col justify-center gap-3 bg-prewedding bg-cover h-screen">
     <img src="@/assets/decoration-asset-1.png" class="w-6/12 mx-auto z-0">
     <div class="w-8/12 mx-auto text-center text-gray-100">
       <p>We Are Getting Married</p>
