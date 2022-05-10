@@ -3,8 +3,27 @@
   @apply absolute w-6/12 md:w-4/12 z-0;
 }
 
+@keyframes backOutUp-custom {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  20% {
+    -webkit-transform: translateY(0px) scale(0.7);
+    transform: translateY(0px) scale(0.7);
+    opacity: 0.7;
+  }
+
+  100% {
+    -webkit-transform: translateY(-700px) scale(0.7);
+    transform: translateY(-100%) scale(0.7);
+    opacity: 0.7;
+  }
+}
 .close-page {
-  animation: backOutUp 1s .55s forwards;
+  animation: backOutUp-custom .5s 1s forwards;
 }
 
 </style>

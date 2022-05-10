@@ -1,11 +1,3 @@
-<style scoped>
-
-img {
-  animation:  1.25s infinite;
-}
-
-</style>
-
 <template>
   <section class="w-full relative flex flex-col justify-center gap-3 bg-prewedding bg-cover h-screen">
     <img src="@/assets/decoration-asset-1.png" class="w-6/12 mx-auto z-0">
