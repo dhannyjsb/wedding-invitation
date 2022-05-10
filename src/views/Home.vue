@@ -16,22 +16,20 @@
 
 <template>
   <section>
-    <Wellcome v-if="showWellcome" />
-    <MainCover />
-    <Information />
-    <GroomBride />
-    <GoToOurWedding />
-    <OurGallery />
-    <OurStory />
-    <GuestBook />
+    <Wellcome></Wellcome>
+    <MainCover id="mainCover"></MainCover>
+    <Information></Information>
+    <GroomBride id="groomAndBride"></GroomBride>
+    <GoToOurWedding id="goToOurWedding"></GoToOurWedding>
+    <OurGallery id="ourGallery"></OurGallery>
+    <OurStory></OurStory>
+    <GuestBook id="guestBook"></GuestBook>
   </section>
-  <Navigation />
+  <Navigation v-on:navChange="navigationHandler"></Navigation>
 </template>
 
 <script setup>
 
-import { useState } from '@/stores/state.js'
-import { computed, watch, ref } from 'vue'
 import Wellcome from '@/components/Wellcome.vue'
 import MainCover from '@/components/MainCover.vue'
 import Information from '@/components/Information.vue'
@@ -42,8 +40,11 @@ import OurStory from '@/components/OurStory.vue'
 import GuestBook from '@/components/GuestBook.vue'
 import Navigation from '@/components/Navigation.vue'
 
-const state = useState()
-const isAudioPlayed = computed(() => state.isAudioPlay)
-const showWellcome = ref(true)
+// Navigation handler
+const navigationHandler = id => {
+  document.querySelector(id).scrollIntoView({
+    behavior: 'smooth'
+  })
+}
 
 </script>
