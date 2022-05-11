@@ -25,28 +25,28 @@ input, textarea, select, option {
       <HeaderSection title="Guest Book" />
       <!-- Form -->
       <form 
-        ref="formEl"
+        ref="form"
         @submit="sendMessage"
         class="w-10/12 mx-auto mt-6">
         <!-- Alert -->
         <Alert :statusResponse="statusResponse" :showAlert="showAlert" v-on:close="showAlert = false" />
         <!-- Guest Name -->
         <div class="input-wrapper" data-aos="zoom-in">
-          <label for="guestName" class="kalam-font">Nama</label>
-          <input v-model="guestName" name="guestName" id="guestName" type="text" required>
+          <label for="GuestName" class="kalam-font">Nama</label>
+          <input v-model="GuestName" name="GuestName" id="GuestName" type="text" required>
         </div>
         <!-- Guest Status -->
         <div class="input-wrapper" data-aos="zoom-in">
-          <label for="guestStatus" class="kalam-font">Kehadiran</label>
-          <select v-model="guestStatus" name="guestStatus" id="guestStatus" required>
-            <option value="true">Hadir</option>
-            <option value="false">Tidak Hadir</option>
+          <label for="GuestStatus" class="kalam-font">Kehadiran</label>
+          <select v-model="GuestStatus" name="GuestStatus" id="GuestStatus" required>
+            <option value="Hadir">Hadir</option>
+            <option value="Tidak Hadir">Tidak Hadir</option>
           </select>
         </div>
         <!-- Guest Message -->
         <div class="input-wrapper" data-aos="zoom-in">
-          <label for="guestMessage" class="kalam-font">Pesan</label>
-          <textarea v-model="guestMessage" name="guestMessage" id="guestMessage" cols="30" rows="5" required></textarea>
+          <label for="GuestMessage" class="kalam-font">Pesan</label>
+          <textarea v-model="GuestMessage" name="GuestMessage" id="GuestMessage" cols="30" rows="5" required></textarea>
         </div>
         <!-- Submit -->
         <button 
@@ -73,49 +73,41 @@ input, textarea, select, option {
 <script setup>
 
 import { computed, reactive, ref } from 'vue'
-import { useState } from '@/stores/state.js'
+import axios from 'axios'
 import HeaderSection from '@/components/HeaderSection.vue'
 import Alert from '@/components/Alert.vue'
 import Gift from '@/components/Gift.vue'
 //import MessagesBox from '@/components/MessagesBox.vue'
 import wave from '@/assets/svg/wave.svg'
 
-const state = useState()
-const messages = computed(() => state.messages)
-
 // Form handler
-const formEl = ref(null)
-
-const guestName =  ref('')
-const guestStatus = ref(true)
-const guestMessage = ref('')
-const timestamp = ref(null)
+const form = ref(null)
+const GuestName = ref(null)
+const GuestMessage= ref(null)
+const GuestStatus = ref('Hadir')
 
 // Alert handler
 const statusResponse = ref(false)
 const showAlert = ref(false)
 
+//URL
+const scriptURL = "https://script.google.com/macros/s/AKfycbzPgWJ7760OwwRlvjhrBMSM9HTVJL2wjDnDB3Up9ZOEIm09LMBwpmSpkQ6eGjAPGPCH/exec"
 const sendMessage = ( evt ) => {
   evt.preventDefault()
   
-  timestamp.value = new Date().toLocaleString()
-  try {
-    setTimeout(() => {
-      state.messages.unshift({ 
-        guestName: guestName.value,
-        guestStatus: guestStatus.value,
-        guestMessage: guestMessage.value,
-        timestamp: timestamp.value
+  setTimeout( () => {
+    // Post form
+    fetch(scriptURL, { method: 'POST', body: new FormData(form.value)})
+      .then( res => {
+        console.log('Success: ', res)
+        statusResponse.value = true
+        showAlert.value = true
+       })
+      .catch( err => {
+        console.log('Error: ', err)
+        statusResponse.value = false
+        showAlert.value = true
       })
-      statusResponse.value = true
-      showAlert.value = true
-      // Reset
-      //form.value.guestName = ''
-      //form.value.guestMessage = ''
-    }, 500)
-  } catch(err) {
-      statusResponse.value = false
-      showAlert.value = true
-  } 
+  }, 500)
 }
 </script>
