@@ -1,19 +1,3 @@
-<style scoped>
-
-@keyframes hide {
-  from {
-    opacity: 1;
-  } to {
-    opacity: 0;
-  }
-}
-
-.hide-section {
-  animation: hide 2s .35s forwards;
-}
-
-</style>
-
 <template>
   <section>
     <Wellcome></Wellcome>

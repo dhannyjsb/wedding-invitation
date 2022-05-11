@@ -56,8 +56,10 @@ input, textarea, select, option {
           Kirim pesan
         </button>
       </form>
+      <!-- Gift Section -->
+      <Gift></Gift>
       <!-- Message Box -->
-      <MessagesBox :messages="messages" />
+      <!--MessagesBox :messages="messages" -->
       <!-- Frames -->
       <div class="w-full flex justify-between mt-6">
         <img class="frame" src="@/assets/frame.png" alt="frame">
@@ -73,7 +75,8 @@ import { computed, reactive, ref } from 'vue'
 import { useState } from '@/stores/state.js'
 import HeaderSection from '@/components/HeaderSection.vue'
 import Alert from '@/components/Alert.vue'
-import MessagesBox from '@/components/MessagesBox.vue'
+import Gift from '@/components/Gift.vue'
+//import MessagesBox from '@/components/MessagesBox.vue'
 import wave from '@/assets/svg/wave.svg'
 
 const state = useState()
