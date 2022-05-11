@@ -17,7 +17,7 @@ const navs = [
     { icon: 'fa-solid fa-children', id: '#groomAndBride'},
     { icon: 'fa-solid fa-hourglass', id: '#goToOurWedding'},
     { icon: 'fa-solid fa-photo-film', id: '#ourGallery'},
-    { icon: 'fa-solid fa-comment-dots', id: '#guestBook'},
+    { icon: 'fa-solid fa-book-bookmark', id: '#guestBook'},
 ]
 
 const emits = defineEmits(['navChange'])

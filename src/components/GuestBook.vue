@@ -61,8 +61,9 @@ input, textarea, select, option {
       <!-- Message Box -->
       <!--MessagesBox :messages="messages" -->
       <!-- Frames -->
-      <div class="w-full flex justify-between mt-6">
+      <div class="w-full items-center flex justify-between mt-6">
         <img class="frame" src="@/assets/frame.png" alt="frame">
+        <p class="text-sm">Diundang &copy; 2022</p>
         <img class="frame" src="@/assets/frame-mirror.png" alt="frame">
       </div>
     </section>
