@@ -29,27 +29,19 @@
 </style>
 
 <template>
-  <section :class="isOpenInvitation ? 'close-page' : ''" class="w-full h-screen bg-slate-100 min-h-screen fixed inset-0 grid place-items-center z-50 bg-texture bg-cover">
-    <!-- Frames -->
-    <img class="frame top-0 left-0 animate__animated animate__fadeInLeft" src="@/assets/frame-mirror.png" alt="frame">
-    <img class="frame top-0 right-0 animate__animated animate__fadeInRight" src="@/assets/frame.png" alt="frame">
-    <img class="frame bottom-0 right-0 rotate-180" src="@/assets/frame-mirror.png" alt="frame">
-    <img class="frame bottom-0 left-0 rotate-180" src="@/assets/frame.png" alt="frame">
-    <!-- Frames -->
+  <section :class="isOpenInvitation ? 'close-page' : ''" class="bg-texture w-full h-screen min-h-screen fixed inset-0 grid place-items-center z-50 bg-amber-200">
     <!-- Wedding couple -->
     <div class="w-6/12 text-center text-xs md:text-lg lg:text-xl">
-      <!-- Decoration -->
-      <img src="@/assets/decoration-asset-1.png" class="animate__animated animate__swing w-10/12 md:w-8/12 mx-auto">
       
       <div class="mt-5 animate__animated animate__zoomInUp">
-        <p>{{ weddingDate }}</p>
-        <h1 class="satisfy-font text-5xl lg:text-6xl my-4 text-green-600">{{ couples.join(' & ') }}</h1>
-        <p>Semoga menjadi pasangan yang dipertemukan oleh takdir hingga maut yang memisahkan</p>
+        <h1 class="kalam-font font-semibold text-5xl lg:text-6xl my-5 text-amber-800">{{ couples.join(' & ') }}</h1>
+        <p class="kalam-font text-amber-800 font-medium text-lg">We Are Getting Married</p>
+        <p class="font-medium text-lg">{{ weddingDate }}</p>
        <!-- CTA -->
         <button 
           type="buton" 
           @click="openInvitation"
-          class="w-10/12 md:w-8/12 text-sm md-text-lg mt-12 font-medium z-50 border border-blue-500 text-blue-500 bg-light p-2 rounded-full pointer active:scale-90 hover:bg-blue-500 hover:text-gray-100 duration-300">
+          class="w-10/12 md:w-8/12 text-sm md-text-lg mt-6 font-medium z-50 border border-amber-800 text-amber-500 bg-gray-50 bg-opacity-75 p-2 rounded-full pointer active:scale-90 hover:bg-amber-500 hover:text-gray-100 duration-300">
           <i class="fa-solid fa-book-open mr-1"></i>
           Buka undangan
        </button>
@@ -57,7 +49,7 @@
       </div>
     </div>
     <!-- Wedding couple -->
-    </section>
+  </section>
 </template>
 
 <script setup>
