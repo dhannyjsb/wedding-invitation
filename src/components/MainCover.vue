@@ -1,16 +1,14 @@
 <template>
-  <section class="w-full relative flex flex-col justify-center gap-3 bg-prewedding bg-cover h-screen">
-    <img src="@/assets/decoration-asset-1.png" class="w-6/12 mx-auto z-0">
-    <div class="w-8/12 mx-auto text-center text-gray-100">
-      <p>We Are Getting Married</p>
-      <h1 class="satisfy-font text-5xl lg:text-6xl my-4 font-bold text-green-300">Fulan & Fulanah</h1>
-      <small>Kepada yth Bapak / Ibu</small>
+  <section class="w-full relative flex flex-col justify-center gap-3 bg-gradient-to-b from-gray-50 to-amber-200 h-screen">
+    <div class="w-8/12 mx-auto text-center text-gray-100 relative">
+      <img src="@/assets/leaf-frame-mirror.png" class="w-3/12 absolute -right-3 -top-5">
+      <h1 class="kalam-font text-5xl lg:text-6xl my-6 font-bold text-amber-800">Fulan & Fulanah</h1>
+      <p class="text-amber-600 font-medium">Hitung mundur pernikahan kami</p>
+      <Countdown></Countdown>
+      <img src="@/assets/leaf-frame.png" class="w-3/12 absolute -left-3 -top-5">
       <br>
-      <strong>{{ query.to }}</strong>
-      <br>
-      <small>Ditempat</small>
     </div>
-    <wave class="absolute -bottom-1 left-0 right-0"/>
+    <waveBlock class="absolute -bottom-1 left-0 right-0"/>
   </section>
 </template>
 
@@ -18,7 +16,8 @@
 
 import { computed } from 'vue'
 import { useRoute } from 'vue-router' 
-import wave from '@/assets/svg/wave.svg'
+import Countdown from '@/components/Countdown.vue'
+import waveBlock from '@/assets/svg/wave-block.svg'
 
 const route = useRoute()
 let query = computed(() => route.query)

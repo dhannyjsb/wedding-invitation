@@ -9,7 +9,6 @@
     <OurStory></OurStory>
     <GuestBook id="guestBook"></GuestBook>
   </section>
-  <Navigation v-on:navChange="navigationHandler"></Navigation>
 </template>
 
 <script setup>

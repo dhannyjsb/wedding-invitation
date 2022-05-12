@@ -5,7 +5,8 @@ module.exports = {
       backgroundImage: {
         "main-cover": "url('@/assets/main-cover.jpeg')",
         "autumn-texture": "url('@/assets/textures/autumn.png')",
-        "prewedding": "url('@/assets/prewedding.jpg')"
+        "prewedding": "url('@/assets/prewedding.jpg')",
+        "bubble-texture": "url('@/assets/textures/bubble.png')"
       },
       fontSize: {
         'xxs': '.65rem'
