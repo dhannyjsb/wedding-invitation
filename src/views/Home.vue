@@ -2,10 +2,7 @@
   <section>
     <Wellcome></Wellcome>
     <MainCover id="mainCover"></MainCover>
-    <Information></Information>
     <GroomBride id="groomAndBride"></GroomBride>
-    <GoToOurWedding id="goToOurWedding"></GoToOurWedding>
-    <OurGallery id="ourGallery"></OurGallery>
     <OurStory></OurStory>
     <GuestBook id="guestBook"></GuestBook>
   </section>

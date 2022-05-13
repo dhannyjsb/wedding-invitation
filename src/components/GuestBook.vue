@@ -9,19 +9,18 @@
 }
 
 label {
-  @apply w-full text-green-500 text-xl;
+  @apply w-full text-amber-500 text-xl;
 }
 
 input, textarea, select, option {
-  @apply w-full px-2 py-3 rounded-lg bg-white duration-300 focus:border-green-500 text-gray-700;
+  @apply w-full px-2 py-3 rounded-lg bg-amber-400 border border-amber-800 duration-300 focus:border-green-500 text-gray-700 placeholder:text-gray-500;
 }
 
 </style>
 
 <template>
-  <section class="w-full mb-12 relative bg-slate-100 pb-0">
-    <wave class="bg-slate-100 rotate-180"/>
-    <section class="container-section">
+  <section class="w-full relative bg-slate-100 pb-0">
+    <section class="container-section bg-gradient-to-b from-amber-200 to-gray-50">
       <HeaderSection title="Guest Book" />
       <!-- Form -->
       <form 
@@ -33,7 +32,7 @@ input, textarea, select, option {
         <!-- Guest Name -->
         <div class="input-wrapper" data-aos="zoom-in">
           <label for="GuestName" class="kalam-font">Nama</label>
-          <input v-model="GuestName" name="GuestName" id="GuestName" type="text" required>
+          <input v-model="GuestName" placeholder="Nama lengkap anda" name="GuestName" id="GuestName" type="text" required>
         </div>
         <!-- Guest Status -->
         <div class="input-wrapper" data-aos="zoom-in">
@@ -46,12 +45,12 @@ input, textarea, select, option {
         <!-- Guest Message -->
         <div class="input-wrapper" data-aos="zoom-in">
           <label for="GuestMessage" class="kalam-font">Pesan</label>
-          <textarea v-model="GuestMessage" name="GuestMessage" id="GuestMessage" cols="30" rows="5" required></textarea>
+          <textarea placeholder="Tuliskan pesan anda disini" v-model="GuestMessage" name="GuestMessage" id="GuestMessage" cols="30" rows="5" required></textarea>
         </div>
         <!-- Submit -->
         <button 
           data-aos="zoom-in"
-          class="w-full bg-green-500 text-gray-100 mt-6 rounded-lg py-2 font-medium pointer active:scale-90 hover:border border-gray-500 hover:bg-gray-100 hover:text-green-500 duration-300" type="submit">
+          class="w-full bg-amber-500 text-gray-100 mt-6 rounded-lg py-2 font-medium pointer active:scale-90 hover:border border-gray-500 hover:bg-gray-100 hover:text-green-500 duration-300" type="submit">
           <i class="fa fa-paper-plane mr-1"></i>
           Kirim pesan
         </button>
@@ -62,9 +61,9 @@ input, textarea, select, option {
       <!--MessagesBox :messages="messages" -->
       <!-- Frames -->
       <div class="w-full items-center flex justify-between mt-6">
-        <img class="frame" src="@/assets/frame.png" alt="frame">
+        <img class="w-2/12" src="@/assets/leaf-frame.png" alt="frame">
         <p class="text-sm">Diundang &copy; 2022</p>
-        <img class="frame" src="@/assets/frame-mirror.png" alt="frame">
+        <img class="w-2/12" src="@/assets/leaf-frame-mirror.png" alt="frame">
       </div>
     </section>
   </section>

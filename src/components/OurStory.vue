@@ -1,16 +1,16 @@
 <template>
   <section class="w-full">
-    <wave class="bg-slate-100" />
-    <section class="container-section">
+    <waveBlock class="rotate-180 bg-gray-50" />
+    <section class="container-section bg-gradient-to-b from-gray-50 to-amber-200 ">
       <HeaderSection title="Our Love Story" />
-      <div class="mt-6">
+      <div class="mt-6 flex overflow-scroll">
         <template v-for="(story, x) in stories" :key="x">
           <div 
             data-aos="zoom-in"
-            class="w-10/12 mx-auto mb-4">
-            <p class="kalam-font text-green-500 text-xl">{{ story.title }}</p>
+            class="mx-auto mb-4 px-4" style="min-width: 100%">
+            <p class="kalam-font text-amber-500 text-xl">{{ story.title }}</p>
             <p class="font-medium mb-0">{{ story.place }}</p>
-            <p>{{ story.description }}</p>
+            <p class="text-lg">{{ story.description }}</p>
           </div>
         </template>
       </div>
@@ -23,7 +23,7 @@
 import axios from 'axios'
 import { ref, onMounted } from 'vue'
 import HeaderSection from '@/components/HeaderSection.vue'
-import wave from '@/assets/svg/wave.svg'
+import waveBlock from '@/assets/svg/wave-block.svg'
 
 const stories = ref(null)
 onMounted(() => {
