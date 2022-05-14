@@ -6,7 +6,8 @@ module.exports = {
         "main-cover": "url('@/assets/main-cover.jpeg')",
         "autumn-texture": "url('@/assets/textures/autumn.png')",
         "prewedding": "url('@/assets/prewedding.jpg')",
-        "bubble-texture": "url('@/assets/textures/bubble.png')"
+        "bubble-texture": "url('@/assets/textures/bubble.png')",
+        "paint-texture": "url('@/assets/textures/paint.png')"
       },
       fontSize: {
         'xxs': '.65rem'

@@ -1,12 +1,12 @@
 <template>
-  <section class="w-full bg-[#FFB704]">
+  <section class="w-full bg-gradient-to-b from-[#FFB704] via-amber-300 to-[#FFB704]">
     <section class="container-section">
       <HeaderSection title="Groom & Bride" />
       <div class="w-10/12 mx-auto text-center text-sm text-slate-800" >
         <img data-aos="zoom-in" src="@/assets/bismillah.png" class="w-8/12 mx-auto mb-3">
         <p 
           data-aos="zoom-in"
-          class="text-gray-700 mb-3">
+          class="text-gray-800 mb-3">
           Assalmualaikum Wa Rahmatullahi Wa Baraktuh
         </p>
         <p data-aos="zoom-in">
