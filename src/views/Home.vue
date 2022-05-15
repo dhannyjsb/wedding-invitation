@@ -2,6 +2,7 @@
   <section>
     <MainCover id="mainCover"></MainCover>
     <FirstSight></FirstSight>
+    <GroomBride></GroomBride>
   </section>
 </template>
 

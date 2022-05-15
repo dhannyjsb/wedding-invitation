@@ -1,20 +1,9 @@
 <template>
-  <section class="w-full bg-slate-100">
-    <wave class="rotate-180" />
+  <section class="w-full bg-gradient-to-b from-gray-800 to-gray-700">
+    <wave class="fill-white" />
     <section class="container-section">
-      <HeaderSection title="Groom & Bride" />
-      <div class="w-10/12 mx-auto text-center text-sm text-slate-800" >
-        <p 
-          data-aos="zoom-in"
-          class="text-green-500 mb-3">
-          Assalmualaikum Wa Rahmatullahi Wa Baraktuh
-        </p>
-        <p data-aos="zoom-in">
-          Ya Allah, perkenankanlah kami merangkai kasih sayang yang Kau ciptakan di antara putra-putri kami:
-        </p>
-      </div>
-      <Profile />
-      <Timelines />
+      <HeaderSection text-color="text-gray-100" title="Mempelai Pria dan Wanita" subtitle="Ya Allah dengan mengharap ridha dan karunia-Mu, Izinkanlah kami mempersatukan dua insan dari dua keluarga ini agar menjadi pasangan yang selalu mendapakan rahmat-Mu" />
+      <Profile></Profile>
     </section>
   </section>
 </template>

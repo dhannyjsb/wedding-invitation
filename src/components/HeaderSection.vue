@@ -1,7 +1,7 @@
 <template>
-  <section data-aos="fade-up" class="w-full px-4 mb-6 text-center">
+  <section data-aos="fade-up" :class="props.textColor" class="w-full px-4 mb-6 text-center">
     <decoration class="fill-amber-400 mx-auto w-3/12 mb-3"></decoration>
-    <h1 class="satisfy-font text-4xl text-slate-800 font-medium mb-3">{{ props.title }}</h1>
+    <h1 class="satisfy-font text-4xl font-medium mb-5">{{ props.title }}</h1>
     <p class="text-sm">{{ subtitle }}</p>
   </section>
 </template>
@@ -18,6 +18,10 @@ const props = defineProps({
   subtitle: {
     type: String,
     default: 'Duis splople autem vel eum iriure Dapibus sit amet, tincidunt eu, nibh.'
+  },
+  textColor: {
+    type: String,
+    default: 'text-slate-800'
   }
 })
 
