@@ -1,20 +1,23 @@
 <template>
-  <section class="w-full mb-6">
-    <div class="w-full flex gap-2 justify-center tems-center my-2">
-      <i class="fa-solid fa-bahai text-sm"></i>
-      <i class="fa-solid fa-bahai"></i>
-      <i class="fa-solid fa-bahai text-sm"></i>
-    </div>
-    <h1 data-aos="zoom-in" class="kalam-font text-4xl text-slate-700 font-medium text-center">{{ props.title }}</h1>
+  <section data-aos="fade-up" class="w-full px-4 mb-6 text-center">
+    <decoration class="fill-amber-400 mx-auto w-3/12 mb-3"></decoration>
+    <h1 class="satisfy-font text-4xl text-slate-800 font-medium mb-3">{{ props.title }}</h1>
+    <p class="text-sm">{{ subtitle }}</p>
   </section>
 </template>
 
 <script setup>
 
+import decoration from '@/assets/svg/decoration-2.svg'
+
 const props = defineProps({
   title: {
     type: String,
     default: 'The Section'
+  }, 
+  subtitle: {
+    type: String,
+    default: 'Duis splople autem vel eum iriure Dapibus sit amet, tincidunt eu, nibh.'
   }
 })
 

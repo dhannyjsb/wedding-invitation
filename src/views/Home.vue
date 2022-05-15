@@ -1,19 +1,14 @@
 <template>
   <section>
     <MainCover id="mainCover"></MainCover>
-    <Information></Information>
-    <GroomBride id="groomAndBride"></GroomBride>
-    <GoToOurWedding id="goToOurWedding"></GoToOurWedding>
-    <OurGallery id="ourGallery"></OurGallery>
-    <OurStory></OurStory>
-    <GuestBook id="guestBook"></GuestBook>
+    <FirstSight></FirstSight>
   </section>
 </template>
 
 <script setup>
 
 import MainCover from '@/components/MainCover.vue'
-import Information from '@/components/Information.vue'
+import FirstSight from '@/components/FirstSight.vue'
 import GroomBride from '@/components/GroomBride.vue'
 import GoToOurWedding from '@/components/GoToOurWedding.vue'
 import OurGallery from '@/components/OurGallery.vue'

@@ -10,6 +10,9 @@ module.exports = {
       fontSize: {
         'xxs': '.65rem',
         'title': '3.5rem'
+      },
+      borderRadius: {
+        '4xl': '2rem'
       }
     },
   },
