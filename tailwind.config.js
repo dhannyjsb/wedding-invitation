@@ -3,12 +3,13 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "main-cover": "url('@/assets/main-cover.jpeg')",
-        "texture": "url('@/assets/texture.png')",
+        "couples": "url('@/assets/images/couples.png')",
+        "texture": "url('@/assets/textures/paper.png')",
         "prewedding": "url('@/assets/prewedding.jpg')"
       },
       fontSize: {
-        'xxs': '.65rem'
+        'xxs': '.65rem',
+        'title': '3.5rem'
       }
     },
   },

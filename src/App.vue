@@ -9,8 +9,8 @@
 <template>
   <main class="app">
     <router-view></router-view>
-    <!-- Backsound auto play -->
-    <Audio />
+    <!-- Mini Button -->
+    <MiniButton></MiniButton>
   </main> 
 </template> 
  
@@ -18,7 +18,7 @@
 
 import AOS from 'aos'
 import { onMounted } from 'vue'
-import Audio from '@/components/Audio.vue'
+import MiniButton from '@/components/MiniButton.vue'
 
 onMounted(() => {
   AOS.init()

@@ -1,22 +1,5 @@
-<style scoped>
-
-@keyframes hide {
-  from {
-    opacity: 1;
-  } to {
-    opacity: 0;
-  }
-}
-
-.hide-section {
-  animation: hide 2s .35s forwards;
-}
-
-</style>
-
 <template>
   <section>
-    <Wellcome></Wellcome>
     <MainCover id="mainCover"></MainCover>
     <Information></Information>
     <GroomBride id="groomAndBride"></GroomBride>
@@ -25,12 +8,10 @@
     <OurStory></OurStory>
     <GuestBook id="guestBook"></GuestBook>
   </section>
-  <Navigation v-on:navChange="navigationHandler"></Navigation>
 </template>
 
 <script setup>
 
-import Wellcome from '@/components/Wellcome.vue'
 import MainCover from '@/components/MainCover.vue'
 import Information from '@/components/Information.vue'
 import GroomBride from '@/components/GroomBride.vue'

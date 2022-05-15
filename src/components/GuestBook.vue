@@ -60,8 +60,8 @@ input, textarea, select, option {
       <MessagesBox :messages="messages" />
       <!-- Frames -->
       <div class="w-full flex justify-between mt-6">
-        <img class="frame" src="@/assets/frame.png" alt="frame">
-        <img class="frame" src="@/assets/frame-mirror.png" alt="frame">
+        <img class="frame" src="@/assets/images/frame.png" alt="frame">
+        <img class="frame" src="@/assets/images/frame-mirror.png" alt="frame">
       </div>
     </section>
   </section>
