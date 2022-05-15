@@ -3,6 +3,7 @@
     <MainCover id="mainCover"></MainCover>
     <FirstSight></FirstSight>
     <GroomBride></GroomBride>
+    <Timelines></Timelines>
   </section>
 </template>
 
@@ -11,6 +12,7 @@
 import MainCover from '@/components/MainCover.vue'
 import FirstSight from '@/components/FirstSight.vue'
 import GroomBride from '@/components/GroomBride.vue'
+import Timelines from '@/components/Timelines.vue'
 import GoToOurWedding from '@/components/GoToOurWedding.vue'
 import OurGallery from '@/components/OurGallery.vue'
 import OurStory from '@/components/OurStory.vue'
