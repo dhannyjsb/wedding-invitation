@@ -3,7 +3,7 @@
 <img src="./src/assets/banner.png" />
 
 ![GitHub](https://img.shields.io/github/license/or-abdillh/wedding-invitation?style=for-the-badge)
-![GitHub last commit (branch)](https://img.shields.io/github/last-commit/or-abdillh/wedding-invitation/theme-01?style=for-the-badge)
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/or-abdillh/wedding-invitation/theme-03?style=for-the-badge)
 ![GitHub contributors](https://img.shields.io/github/contributors/or-abdillh/wedding-invitation?style=for-the-badge)
 
 ### Languages and Tools
@@ -40,7 +40,7 @@
 - [x] Couple profiles with picture
 
 ### Demo 
-- Coming soon
+- [Diundang - Official Theme](http://diundang-demo-3.vercel.app)
 
 ### Thanks 
 - Support me with a cup of coffee and other snacks [here ..](https://saweria.co/orabdillh)
