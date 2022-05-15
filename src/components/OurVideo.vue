@@ -1,6 +1,6 @@
 <template>
   <section class="container-section bg-slate-100">
-    <HeaderSection title="Our Video" /> 
+    <HeaderSection title="Video Singkat Kami" /> 
     <VueVideoPlayer data-aos="zoom-in" class="w-10/12 mx-auto" :src="source" />
   </section>
 </template>

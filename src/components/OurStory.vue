@@ -1,14 +1,13 @@
 <template>
   <section class="w-full">
-    <wave class="bg-slate-100" />
     <section class="container-section">
-      <HeaderSection title="Our Love Story" />
+      <HeaderSection title="Kisah Cinta Kami" />
       <div class="mt-6">
         <template v-for="(story, x) in stories" :key="x">
           <div 
             data-aos="zoom-in"
             class="w-10/12 mx-auto mb-4">
-            <p class="kalam-font text-green-500 text-xl">{{ story.title }}</p>
+            <p class="satisfy-font text-3xl text-amber-500 text-xl">{{ story.title }}</p>
             <p class="font-medium mb-0">{{ story.place }}</p>
             <p>{{ story.description }}</p>
           </div>

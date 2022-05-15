@@ -4,6 +4,7 @@
     <FirstSight></FirstSight>
     <GroomBride></GroomBride>
     <Timelines></Timelines>
+    <OurGallery></OurGallery>
   </section>
 </template>
 

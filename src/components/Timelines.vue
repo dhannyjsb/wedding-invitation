@@ -8,7 +8,7 @@
 
 <template>
   <section class="w-full bg-gradient-to-b from-gray-700 to-gray-600">
-    <section class="container-section">
+    <section class="container-section pb-12">
       <HeaderSection text-color="text-gray-100" subtitle="Dengan tidak mengurangi rasa hormat, kami mengajak para tamu undangan agar bisa berhadir pada serangkaian acara kami" title="Runtutan Acara"></HeaderSection>
       <Card>
         <template v-slot:body>
