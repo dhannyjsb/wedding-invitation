@@ -5,6 +5,7 @@
     <GroomBride></GroomBride>
     <Timelines></Timelines>
     <OurGallery></OurGallery>
+    <GuestBook></GuestBook>
   </section>
 </template>
 
@@ -14,11 +15,8 @@ import MainCover from '@/components/MainCover.vue'
 import FirstSight from '@/components/FirstSight.vue'
 import GroomBride from '@/components/GroomBride.vue'
 import Timelines from '@/components/Timelines.vue'
-import GoToOurWedding from '@/components/GoToOurWedding.vue'
 import OurGallery from '@/components/OurGallery.vue'
-import OurStory from '@/components/OurStory.vue'
 import GuestBook from '@/components/GuestBook.vue'
-import Navigation from '@/components/Navigation.vue'
 
 // Navigation handler
 const navigationHandler = id => {
