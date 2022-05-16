@@ -13,7 +13,7 @@ label {
 }
 
 input, textarea, select, option {
-  @apply w-full px-2 py-3 rounded-lg bg-gray-800 border border-gray-100 shadow-lg duration-300 focus:border-gray-500 text-gray-200 placeholder:text-gray-200;
+  @apply w-full px-2 py-3 rounded-lg bg-gray-800 border border-gray-100 shadow-lg duration-300 focus:border-gray-500 text-gray-200 placeholder:text-gray-400;
 }
 
 </style>
@@ -47,6 +47,7 @@ input, textarea, select, option {
           <label for="GuestMessage">Pesan</label>
           <textarea placeholder="Tuliskan pesan anda disini" v-model="GuestMessage" name="GuestMessage" id="GuestMessage" cols="30" rows="5" required></textarea>
         </div>
+        {{ query }}
         <!-- Submit -->
         <button 
           data-aos="zoom-in"
@@ -70,6 +71,7 @@ input, textarea, select, option {
 <script setup>
 
 import { ref } from 'vue'
+import { useRoute } from 'vue-router'
 import axios from 'axios'
 import HeaderSection from '@/components/HeaderSection.vue'
 import Alert from '@/components/Alert.vue'
@@ -105,4 +107,9 @@ const sendMessage = ( evt ) => {
       })
   }, 500)
 }
+
+// Auto fill guest name with route.query
+const route = useRoute()
+if ( route.query.to ) GuestName.value = route.query.to
+
 </script>
