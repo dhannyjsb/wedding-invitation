@@ -3,9 +3,9 @@
     <MainCover id="mainCover"></MainCover>
     <FirstSight></FirstSight>
     <GroomBride></GroomBride>
-    <Timelines></Timelines>
+    <Timelines v-on:goToGuestBook="navigationHandler('#guest-book')"></Timelines>
     <OurGallery></OurGallery>
-    <GuestBook></GuestBook>
+    <GuestBook id="guest-book"></GuestBook>
   </section>
 </template>
 

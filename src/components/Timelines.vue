@@ -1,7 +1,7 @@
 <style scoped>
 
-.button {
-  @apply bg-orange-600 text-gray-100 px-2 py-2 w-full rounded text-center;
+.btn {
+  @apply active:scale-95 active:ring-gray-200 active:ring duration-300 rounded-3xl px-3 py-2 text-amber-500 bg-gray-800 inline-block w-10/12 mt-4;
 }
 
 </style>
@@ -19,7 +19,7 @@
               <decoration class="w-2/12 mx-auto my-2 fill-amber-500"></decoration>
               <p class="text-amber-500">{{ timeline.location }}</p>
               <p class="text-gray-200">{{ timeline.address }}</p>
-              <a class="rounded-3xl px-3 py-2 text-amber-500 bg-gray-800 inline-block w-10/12 mt-4" href="">
+              <a class="btn" href="">
                 <i class="fa-solid fa-map"></i>
                 Lihat Peta
               </a>
@@ -30,6 +30,14 @@
         <template v-slot:footer>
           <section class="bg-gray-900">
             <Countdown></Countdown>
+            <!-- Button to Guest Book -->
+            <div class="px-6 pt-5 pb-8 text-center">
+              <p class="text-sm text-gray-100">Konfirmasi kehadiran anda pada buku tamu</p>
+              <button @click="goToGuestBook" class="btn">
+                <i class="fa-solid fa-clipboard-check"></i>
+                Konfirmasi
+              </button>
+            </div>
             <img src="@/assets/images/couples.png" alt="">
           </section>
         </template>
@@ -53,5 +61,10 @@ onMounted(() => {
     .then( res => timelines.value = res.data.timelines )
     .catch( err => alert(err) )
 })
+
+// Handler for navigate to guest book
+const emits = defineEmits(['goToGuestBook'])
+
+const goToGuestBook = () => setTimeout(() => { emits('goToGuestBook') }, 300)
 
 </script>
