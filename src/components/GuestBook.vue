@@ -19,7 +19,7 @@ input, textarea, select, option {
 </style>
 
 <template>
-  <section class="w-full bg-slate-100 pt-10">
+  <section class="w-full bg-slate-100 pt-5">
     <section class="container-section bg-slate-100">
       <HeaderSection title="Buku Tamu" subtitle="Demi kelancaran acara dimohon untuk para tamu undangan untuk memastikan kehadirannya pada acara kami" />
       <!-- Form -->

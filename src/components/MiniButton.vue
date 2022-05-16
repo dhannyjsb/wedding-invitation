@@ -17,10 +17,9 @@
       <i v-if="!isPlayed" class="fa-solid fa-volume-off"></i>
       <i v-else class="fa-solid fa-volume-high"></i>
     </button>
-    <button class="button">
+    <button @click="giftAction" class="button">
       <i class="fa-solid fa-gift"></i>
     </button>
-
   </section>
 </template>
 
@@ -45,5 +44,7 @@ const control = () => {
 }
 
 watch(isAudioPlay, control)
+
+const giftAction = () => setTimeout(() => { document.querySelector('#envelope').scrollIntoView({ behavior: 'smooth' }) }, 300)
 
 </script>
